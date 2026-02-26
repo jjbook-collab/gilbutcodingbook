@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>코딩 자율학습단 도서 추천 챗봇</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <div class="brand">
+        <img src="assets/kochun.png" alt="코딩천재 코천 캐릭터" class="brand-avatar" />
+        <div class="brand-text">
+          <h1>코천과 코딩 자율학습단 도서 추천</h1>
+          <p>코딩천재 코천이랑 수다 떨면서 책 골라보기</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="chat-layout">
+      <section class="chat-panel">
+        <div id="chat-window" class="chat-window">
+          <!-- 메시지들이 JS로 채워집니다 -->
+        </div>
+        <form id="chat-form" class="chat-input-area">
+          <textarea
+            id="user-input"
+            class="chat-input"
+            placeholder="요즘 코딩 관련해서 어떤 고민이 있어? 편하게 말해줘 :)"
+            rows="2"
+          ></textarea>
+          <button type="submit" class="send-button">보내기</button>
+        </form>
+      </section>
+
+      <aside class="info-panel">
+        <div class="info-card">
+          <h2>어떻게 추천해 줄까?</h2>
+          <p>
+            네가 적어준 <strong>경험 수준, 관심 분야, 고민</strong>을 읽고<br />
+            9권 중에서 어울리는 책을 골라 줄게.
+          </p>
+          <ul class="hint-list">
+            <li>완전 입문인지, 조금 해봤는지</li>
+            <li>웹, 데이터, C 언어, AI 중 뭐가 궁금한지</li>
+            <li>코딩으로 결국 뭘 하고 싶은지</li>
+          </ul>
+        </div>
+
+        <div class="info-card book-list-card">
+          <h2>추천 대상 도서 9권</h2>
+          <ol class="book-list">
+            <li>코딩 자율학습 나도코딩의 파이썬 입문</li>
+            <li>코딩 자율학습 나도코딩의 C 언어 입문</li>
+            <li>코딩 자율학습 HTML+CSS+자바스크립트</li>
+            <li>코딩 자율학습 SQL 데이터베이스 입문</li>
+            <li>코딩 자율학습 잔재미코딩의 파이썬 데이터 분석</li>
+            <li>한 걸음 앞선 일잘러가 지금 꼭 알아야 할 바이브 코딩 with 커서</li>
+            <li>AI 자율학습 커서×AI로 완성하는 나만의 웹 서비스</li>
+            <li>AI 자율학습 밑바닥부터 배우는 AI 에이전트</li>
+            <li>AI 자율학습 클로드 코드·코덱스 CLI·제미나이 CLI 완전 활용법</li>
+          </ol>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+

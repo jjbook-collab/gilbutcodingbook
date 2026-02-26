@@ -1,0 +1,15 @@
+{
+  "name": "kochun-book-recommender",
+  "version": "1.0.0",
+  "description": "코딩 자율학습단 코천 LLM 도서 추천 데모",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "node-fetch": "^3.3.2"
+  },
+  "type": "module"
+}
+
